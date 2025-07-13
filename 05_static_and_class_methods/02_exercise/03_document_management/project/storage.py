@@ -47,7 +47,7 @@ class Storage:
         if current_object:
             current_object.edit(*args)
 
-    def __delete_object(self, object_id, collection, *args):
+    def __delete_object(self, object_id, collection):
         current_object = self.__find_object(object_id, collection)
         if current_object:
             collection.remove(current_object)
