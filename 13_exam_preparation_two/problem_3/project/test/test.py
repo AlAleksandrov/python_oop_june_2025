@@ -13,6 +13,8 @@ class TestFurniture(TestCase):
         self.assertEqual((120, 130, 200), self.furniture_1.dimensions)
         self.assertEqual(True, self.furniture_1.in_stock)
         self.assertEqual(80, self.furniture_1.weight)
+        self.assertEqual(False, self.furniture_2.in_stock)
+        self.assertEqual(None, self.furniture_2.weight)
 
     def test_model_validation(self):
         with self.assertRaises(ValueError) as e:
