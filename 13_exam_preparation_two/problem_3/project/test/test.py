@@ -69,5 +69,5 @@ class TestFurniture(TestCase):
         self.assertEqual("Model: Furniture_One has the following dimensions: 110mm x 120mm x 180mm and weighs: N/A",
                          result)
 
-if __name__ == "main":
+if __name__ == "__main__":
     main()
