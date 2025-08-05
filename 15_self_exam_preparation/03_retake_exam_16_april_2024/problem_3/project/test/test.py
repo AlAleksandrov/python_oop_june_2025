@@ -96,3 +96,6 @@ class TestRestaurant(TestCase):
             {"name": "Jane", "total_earnings": 60}
         ]
         self.assertEqual(100, self.restaurant.get_total_earnings())
+
+if __name__ == "__main__":
+    main()
